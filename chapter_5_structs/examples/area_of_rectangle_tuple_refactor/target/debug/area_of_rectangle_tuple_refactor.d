@@ -1,0 +1,1 @@
+/home/js/rust/rust_programming_language/chapter_5_structs/examples/area_of_rectangle_tuple_refactor/target/debug/area_of_rectangle_tuple_refactor: /home/js/rust/rust_programming_language/chapter_5_structs/examples/area_of_rectangle_tuple_refactor/src/main.rs
