@@ -1,3 +1,5 @@
+use std::io::{self, Write};
+
 #[derive(Debug)] /* Allow us to inspect enums */
 
 enum UsState {
@@ -48,10 +50,21 @@ fn value_in_cents3(coin: Coin) -> u8 {
     }
 }
 
+fn move_player(num_spaces : u8) {
+    println!("Player moved {} spaces", num_spaces);
+}
+
 fn main() {
     let penny : Coin = Coin::Penny;
     let nickel : Coin = Coin::Nickel;
     let r1 = value_in_cents2(penny);
     println!("{}", value_in_cents1(nickel));
     println!("{}", value_in_cents3(Coin::Quarter(UsState::Alaska)));
+
+    /* catch all patterns */
+    let dice_roll = 9;
+    match dice_roll {
+        3 => println!("The roll was a 3"),
+        other => move_player(other),
+    }
 }
