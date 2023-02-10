@@ -1,0 +1,1 @@
+/home/js/rust/rust_programming_language/chapter_8_common_collections/exercises/mode/target/debug/libmode.rlib: /home/js/rust/rust_programming_language/chapter_8_common_collections/exercises/mode/src/lib.rs
