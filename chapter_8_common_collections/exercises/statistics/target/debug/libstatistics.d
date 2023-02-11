@@ -1,1 +1,0 @@
-/home/js/rust/rust_programming_language/chapter_8_common_collections/exercises/statistics/target/debug/libstatistics.rlib: /home/js/rust/rust_programming_language/chapter_8_common_collections/exercises/statistics/src/averages.rs /home/js/rust/rust_programming_language/chapter_8_common_collections/exercises/statistics/src/lib.rs
