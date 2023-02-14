@@ -28,6 +28,7 @@ pub fn median(vector: &Vec<isize>) -> Option<f32> {
     for i in vector {
         v.push(*i)
     }
+    /* Median is defined for sorted values */
     v.sort();
     if vector.len() % 2 == 0 {
         if let Some(x) = vector.get(vector.len() / 2) {

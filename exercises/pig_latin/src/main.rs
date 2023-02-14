@@ -1,3 +1,5 @@
+/* Convert strings to pig latin. The ﬁrst consonant of each word is moved to the end of the word and “ay” is added, so “ﬁrst” becomes “irst-fay.” Words that start with a vowel have “hay” added to the end instead (“apple” becomes “apple-hay”). */
+
 use std::io;
 use std::collections::HashMap;
 
@@ -25,6 +27,7 @@ fn main() {
         /* Turn the string slice into a String */
         let mut word = String::from(i);
         /* Lookup the first character in the hash map */
+        /* Note: .chars() returns an iterator over unicode scalar values and not grapheme clusters */
         match map.get(&word.chars().nth(0)) {
             /* Word starts with a vowel */
             Some(c) => words.push(format!("{word}-hay")), 
