@@ -48,6 +48,27 @@ fn read_file(s: &str) -> Result<String, io::Error> {
     std::fs::read_to_string(s)
 }
 
+/* Validation using struct */
+struct Validator {
+    value: i32
+}
+
+/* Use a struct with validation logic built in */
+impl Validator {
+    pub fn new(value: i32) -> Validator {
+        /* Check the condition */
+        if value < 1 || value > 100 {
+            panic!("Failed validation");
+        }
+        /* Return a instance of the value */
+        Validator { value }
+    }
+
+    pub fn value(&self) -> i32 {
+        self.value
+    }
+}
+
 fn main() {
     /* panic! examples */
     //simple_panic();
@@ -96,6 +117,9 @@ fn main() {
     /* We are using a hardcoded IP address and we know that 127.0.0.1 is a valid IP address (it's
      * the loopback address) so it is acceptable to use expect() here as we know this will not fail */
     let home: IpAddr = "127.0.0.1".parse().expect("Hardcoded IP address should be valid");
+    
+    /* validate that x is between 1 and 100 */
+    let x = Validator::new(5).value();
 }
 
 /* Main returning Result<(), E> with the Box<dyn Error> trait object as error type (meaning any
