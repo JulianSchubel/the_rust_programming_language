@@ -95,7 +95,7 @@ fn main() {
                 }
             }
         } else if x == 3 {
-            /* List all employess in the company */
+            /* List all employees in the company */
             println!("--------------------------------------------------");
             println!("All persons employed by department name:");
             for (department, employees) in &company {
