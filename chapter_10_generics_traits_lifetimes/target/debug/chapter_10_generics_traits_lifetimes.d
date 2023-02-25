@@ -1,0 +1,1 @@
+/home/js/rust/rust_programming_language/chapter_10_generics_traits_lifetimes/target/debug/chapter_10_generics_traits_lifetimes: /home/js/rust/rust_programming_language/chapter_10_generics_traits_lifetimes/src/main.rs
