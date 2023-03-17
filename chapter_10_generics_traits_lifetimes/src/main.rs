@@ -103,7 +103,7 @@ fn notify2<T: Summary>(item: &T) {
 
 /* two potentially different types with the same trait implementation */
 fn notify3 (item1: & impl Summary, item2: & impl Summary) {
-    
+
 }
 
 /* The above in trait bound syntax */
