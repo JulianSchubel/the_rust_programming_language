@@ -1,0 +1,1 @@
+/home/js/rust/rust_programming_language/modules/target/debug/modules: /home/js/rust/rust_programming_language/modules/src/main.rs /home/js/rust/rust_programming_language/modules/src/other_modules/some_module.rs /home/js/rust/rust_programming_language/modules/src/other_modules.rs /home/js/rust/rust_programming_language/modules/src/some_module.rs
